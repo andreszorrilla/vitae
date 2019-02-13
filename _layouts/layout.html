@@ -27,10 +27,8 @@
     <header class="four columns">
         <!--<img src="{{ site.baseurl }}static/img/profile.png" class="me">-->
         <h1>{{ site.name }}</h1>
-        <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
-        </p>
         <address>
+            <i class="fa fa-map-pin"></i>
                 {{ site.address.street }}
                 {{ site.address.postcode }}
                 {{ site.address.city }}
@@ -38,10 +36,10 @@
             </a>
         </address>
         <p>
-            <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
-        </p>
-        <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
+            <a href="#"><i class="fa fa-phone"></i> <a href="{{ site.tel_full }}">{{ site.tel }}</a></a>
+            <a href="{{ site.website_full }}"><i class="fa fa-globe-europe"></i> {{ site.website }}</a><br/>
+            <a href="{{ site.email_full }}"><i class="fa fa-envelope-square"></i> {{ site.email }}</a><br/>
+            <a href="https://github.com/{{ site.github }}"><i class="fa fa-linkedin"></i> /in/andreszorrillav</a><br>
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> andreszorrilla</a>
             <br>
             <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> andreszorr</a>
