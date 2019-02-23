@@ -25,7 +25,7 @@
 <body>
 <div class="container">
     <header class="four columns">
-        <!--<img src="{{ site.baseurl }}static/img/profile.png" class="me">-->
+        <img src="{{ site.baseurl }}static/img/andres.jpeg" class="me">
         <h1>{{ site.name }}</h1>
         <!--
         <address>
@@ -39,22 +39,27 @@
         -->
         <p>
             <a href="#"><i class="fa fa-phone"></i> <a href="{{ site.tel_full }}">{{ site.tel }}</a></a>
-            <a href="{{ site.website_full }}"><i class="fa fa-globe-europe"></i> {{ site.website }}</a><br/>
-            <a href="{{ site.email_full }}"><i class="fa fa-envelope-square"></i> {{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-linkedin"></i> /in/andreszorrillav</a><br>
+            <br/>
+            <a href="{{ site.website_full }}"><i class="fa fa-globe"></i> {{ site.website }}</a>
+            <br/>
+            <a href="{{ site.email_full }}"><i class="fa fa-envelope-square"></i> {{ site.email }}</a>
+            <br/>
+            <a href="https://linkedin.com/in/andreszorrillav"><i class="fa fa-linkedin"></i> /in/andreszorrillav</a>
+            <br/>
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> andreszorrilla</a>
-            <br>
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> andreszorr</a>
+            <br/>
+        </p>
+        <p style="text-align: justify;">
+            <span><em>About me:</em></span><br/>
+            <span>I’m a Software Engineer who loves working with web developement technology.
+            I’ve been working as a programmer for the last 4 years. I enjoy backend (Python, Ruby and a bit of Java) and frontend programming (complex JS applications that runs in the browser).
+            </span>
         </p>
     </header>
-    <div class="twelve columns clearfix">
+    <div class="eleven columns clearfix">
 
         {{ content }}
 
-    <footer class="twelve columns">
-        <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
-            <a href="https://www.github.com/jekyller/vitae">vitae</a> with ♥</p>
-    </footer>
     </div>
 </div>
 <!--
